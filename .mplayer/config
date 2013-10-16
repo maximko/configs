@@ -1,0 +1,8 @@
+# Write your default config options here!
+framedrop=1
+hardframedrop=1
+unicode=yes
+utf8=yes
+cache=8192
+ass=1
+alang=Japanese,jpn,ja
