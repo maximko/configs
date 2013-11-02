@@ -15,6 +15,7 @@ export LESS_TERMCAP_ue=$'\033[0m'
 export LESS_TERMCAP_us=$'\033[01;36m'
 
 alias ls="ls --color=auto -ahl"
-
+#Костыль, но через $PATH не работает
+alias adb="~/dev/android-sdk/platform-tools/adb"
 # sensors parsed output
 s
