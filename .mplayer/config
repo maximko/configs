@@ -6,3 +6,5 @@ utf8=yes
 cache=8192
 ass=1
 alang=Japanese,jpn,ja
+vf=screenshot
+
