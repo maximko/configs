@@ -1,0 +1,97 @@
+begin
+    button = power
+    prog = irexec
+    repeat = 0
+    config = echo "0" | socat - UDP-DATAGRAM:192.168.0.255:1001,broadcast && xset dpms force suspend
+end
+
+begin
+    prog = pulseaudio
+    config = volume-down
+    button = volume_down
+    repeat = 1
+end
+
+begin
+    prog = pulseaudio
+    config = volume-up
+    button = volume_up
+    repeat = 1  
+end
+
+begin
+    prog = pulseaudio
+    config = mute-toggle
+    button = disp
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = deadbeef --play &
+    button = cancel
+    repeat = 1
+end
+
+begin
+    prog = irexec
+    config = deadbeef --play-pause &
+    button = pause
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = deadbeef --stop &
+    button = clear
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = deadbeef --next &
+    button = next
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = deadbeef --prev &
+    button = prev
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = skh -a
+    button = <>
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = skh -m
+    button = counter
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = skh -h
+    button = stop
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = echo `date +%H:%M` | say &
+    button = disk1
+    repeat = 0
+end
+
+begin
+    prog = irexec
+    config = gnome-screensaver-command --lock; xset dpms force suspend
+    button = sleep
+    repeat = 0
+end
